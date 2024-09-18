@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TZL RUNNER</title>
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="header-inner-content">
+            <img src="./assets/logo.png" alt="Logo" class="navbar-logo" />
+            <h1 class="logo">TZL <span>RUNNER</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="all-products.html">Produtos</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icon-container">
+                <img src="assets/cart.png" />
+                <img src="assets/menu.png" class="menu-button"/>
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <h1>Entre em Contato</h1>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h2>Endereço</h2>
+                        <p>R. José Péres, 558<br>Centro, Leopoldina, MG, 36700-000</p>
+                    </div>
+                    <div class="info-item">
+                        <h2>Telefone</h2>
+                        <p>(32) 3449-2300</p>
+                    </div>
+                    <div class="info-item">
+                        <h2>E-mail</h2>
+                        <p>tzlrunner@gmail.com</p>
+                    </div>
+                </div>
+
+                <form action="submit_form.php" method="POST" class="contact-form">
+                    <h2>Envie-nos uma Mensagem</h2>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+
+                    <button type="submit" class="submit-button">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main> 
+
+    <footer class="gray-background">
+        <div class="page-inner-content footer-content">
+            <div class="download-options">
+                <p>Baixe nossa aplicação</p>
+                <p>Baixe nossa aplicação para Android e iOS</p>
+                <div>
+                    <img src="./assets/app-store.png" alt="" />
+                    <img src="./assets/play-store.png" alt="" />
+                </div>
+            </div>
+            
+            <div class="logo-footer">
+                <h1 class="logo">TZL <span>RUNNER</span></h1>
+                <p>Nosso objetivo é apresentar ao mundo uma moda totalmente inovadora</p>
+            </div>
+
+            <div class="links-footer">
+                <h3>Links úteis</h3>
+                <ul>
+                    <li>Cupons</li>
+                    <li>Blog Post</li>
+                    <li>Políticas</li>
+                    <li>Torne-se afiliado</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <hr class="page-inner-content" />
+
+        <div class="page-inner-content copyright">
+            <p>Copyright 2024 | Barbearia Family - Todos direitos reservados. By Marcos Vinícius e Mateus Augusto</p>
+        </div>
+    </footer>
+
+    <script>
+        const navbar = document.querySelector(".navbar");
+        const menuButton = document.querySelector(".menu-button");
+
+        menuButton.addEventListener('click', () => {
+            navbar.classList.toggle("show-menu");
+        });
+    </script>
+</body>
+</html>
